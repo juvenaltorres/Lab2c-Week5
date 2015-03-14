@@ -1,0 +1,69 @@
+import java.util.Scanner;
+public class Lab2cWeek5 {
+public static void main(String[] args) {
+Scanner keyboard = new Scanner(System.in);
+    
+int guess;
+int secretNumber;
+    
+System.out.print("Enter a guess: ");
+secretNumber = 0 + (int) (Math.random() * 10);
+     
+guess = keyboard.nextInt();
+System.out.println("Your guess is " + guess); 
+
+if( guess >=0 || guess >=10) {
+System.out.println("INVALID NUMBER");
+}
+
+
+	if (guess == secretNumber) {
+		System.out.println("Congratulations you are right");
+		
+	}
+
+	else if (guess > secretNumber) {
+		System.out.println("Your number is bigger INSERT A SMALLER NUMBER");
+	}
+	else if (guess < secretNumber ) {
+		System.out.println("Number is smaller INSERT A BIGGER NUMBER");
+	}
+		while (guess != secretNumber) {
+			guess = keyboard.nextInt();
+			System.out.println("Your guess is " + guess); 	
+			if (guess > secretNumber) {
+			System.out.println("Your number is bigger INSERT A SMALLER NUMBER");
+				}
+			if (guess < secretNumber ) {
+				System.out.println("Number is smaller INSER A BIGGER NUMBER");
+				}	
+			else if (guess == secretNumber) {
+				System.out.println("Congratulations you are right");
+			}
+				Scanner kb = new Scanner(System.in);
+				int Name;
+				Name =2;
+				{
+				System.out.println("IF LIKE TO PLAY AGAIN PRESS 1 AND 2 FOR QUIT");
+				Name = kb.nextInt();
+				
+				}
+				switch( Name) {
+				case 1:
+				System.out.println("PLEASE RUN AGAIN THE GAME");
+				break;
+				case 2:
+				System.out.println("Bye");
+				break;
+				
+				
+					
+						}
+					
+					}
+					
+						
+				}
+					}
+				
+			
